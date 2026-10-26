@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "overlock-reg";
+    src: url(../fonts/Overlock-Regular.ttf);
+}
+header{
+    font-family: overlock-reg;
+    font-size: 20px;
+}
