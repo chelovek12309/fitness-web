@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 0;
 }
 @font-face {
     font-family: "open_sans-semibold";
@@ -34,14 +34,23 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center;
+    font-family: overlock-bold; 
+    
+    font-size: 16px;
 }
 header{
     background-image: url("../img/img_1.png");
     font-family: overlock-reg;
-    font-size: 20px;
+    font-size: 16px;
     width: 1440px;
     height: 840px;
     display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1440px;
     flex-direction: column;
 }
 .nav{
@@ -62,7 +71,6 @@ header{
     height: 24px;
     margin-left: 244.86px;
     font-family: inter-reg;
-    font-size: 16px;
     line-height: 24px;
     gap: 40px;
 }
@@ -79,6 +87,8 @@ header{
     font-family: poppins-reg;
     border: none;
     outline: 1.50px white solid;
+    font-size: 16px;
+    align-items: center;
 }
 .Sign_up{
     margin-left: 164px;
@@ -90,6 +100,8 @@ header{
     outline: 1.50px white solid;
     color: white;
     border: none;
+    font-size: 16px;
+    align-items: center;
 }
 .get{
     display: flex;
@@ -98,9 +110,7 @@ header{
     margin-top: 88px;
     margin-right: 1099px;
     font-size: 24px;
-    line-height: 34px;
     color: white;
-
 }
 .get_black{
     font-family: overlock-black;
@@ -135,6 +145,7 @@ header{
     font-family: open_sans-semibold;
     color: black;
     font-size: 16px;
+    align-items: center;
 
 }
 .play_video{
@@ -146,12 +157,11 @@ header{
 }
 .play_video_logo{
     width: 56px;
-    height: 56px;
     margin-right: 8px;
 }
 .play_video_text{
     font-family: open_sans-semibold;
-    font-size: 16px;
+
     color: white;
 
 }
@@ -165,13 +175,12 @@ header{
     margin-right: 176px;
     color: white;
 }
-.members_up{
+.members_top{
     font-family: inter-bold;
     font-size: 32px;
 }
-.members_down{
+.members_bottom{
     font-family: inter-reg;
-    font-size: 16px;
 }
 .expert{
     width: 122px;
@@ -184,4 +193,58 @@ header{
 .programs{
     width: 90px;
     height: 70px;
+}
+.logo{
+    display: flex;
+    width: 152px;
+    height: 32px;
+    align-items: center;
+}
+.trainers{
+    display: flex;
+    height: 904px;
+    background-color: #f5f5f5;
+    width: 1440px;
+    flex-direction: column;
+}
+.quality{
+    display: flex;
+    margin-top: 72px;
+    margin-left: 136px;
+    height: 454px;
+    width: 1168px;
+    /*background-color: violet;*/
+    gap: 32px;
+    align-items: center;
+    text-align: end;
+}
+.quality_top{
+    width: 268px;
+    height: 386px;
+    background-image: url("../img/quality 1.png");
+    align-items: end;
+}
+.quality_bottom{
+    width: 268px;
+    height: 386px;
+    margin-top: 68px;
+}
+.read_more{
+    display: flex;
+    background-color: black;
+    border: 0;
+    color: white;
+    font-family: open-sanz_semibold;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 60px;
+    margin-left: 659px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.quality_text{
+    font-family: overlock-black;
+    font-size: 24px;
 }
