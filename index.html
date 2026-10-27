@@ -3,51 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fitness-web</title>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class = "logo">
-                <img src="../fitness-web/img/logo.svg" alt="logo_svg">
-                <img src="../fitness-web/img/FITNESS.png" alt="logo_svg">
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <div class = "logo">
+                    <img style="margin-right: 5px;" src="../fitness-web/img/logo.svg" alt="logo_svg">
+                    <img src="../fitness-web/img/FITNESS.png" alt="logo_svg">
+                </div>
+                <div class="nav_menu">
+                    <a class="nav_menu_text" href="#">Home</a>
+                    <a class="nav_menu_text" href="#">About us</a>
+                    <a class="nav_menu_text" href="#">Community</a>
+                    <a class="nav_menu_text" href="#">Pricing</a>
+                </div>
+                <button class="Sign_up">Sign Up</button>
+                <button class = "Log_in">Log In</button>
+            </nav>
+            <div class="get"><p><b>Get 50% </b>to First join</p></div>
+            <div>
+                <h1 class="shape"><b>Shape your<br>Protect Body</b></h1>
             </div>
-            <div class="nav_menu">
-                <a class="nav_menu_text" href="#">Home</a>
-                <a class="nav_menu_text" href="#">About us</a>
-                <a class="nav_menu_text" href="#">Community</a>
-                <a class="nav_menu_text" href="#">Pricing</a>
+            <div class="preview">
+                <button class="get_started" >Get started</button>
+                <div class="play_video">
+                <img class="play_video_logo" src="../fitness-web/img/play.png" alt="play_logo">
+                <p class="play_video_text">Play Video</p>
+                </div>
             </div>
-            <button class="Sign_up">Sign Up</button>
-            <button class = "Log_in">Log In</button>
-        </nav>
-        <div class="get"><span class="get_black">Get 50%</span><span>to First join</span></div>
-        <div>
-            <pre class="shape">Shape your<br>Protect Body</pre>
-        </div>
-        <div class="preview">
-            <button class="get_started" >Get started</button>
-            <div class="play_video">
-            <img class="play_video_logo" src="../fitness-web/img/play.png" alt="play_logo">
-            <p class="play_video_text">Play Video</p>
+            <div class="members">
+                <div class="expert">
+                    <div class="members_top">120+</div>
+                    <div class="members_bottom">EXPERT COACH</div>
+                </div>
+                <div class="mem">
+                    <div class="members_top">1K+</div>
+                    <div class="members_bottom">MEMBERS</div>
+                </div>
+                <div class="programs">
+                    <div class="members_top">50+</div>
+                    <div class="members_bottom">PROGARMS</div>
+                </div>
             </div>
-        </div>
-        <div class="members">
-            <div class="expert">
-                <div class="members_up">120+</div>
-                <div class="members_down">EXPERT COACH</div>
+        </header>
+        <section class="trainers">
+            <h2 style="font-size: 48px; margin-left: 585px; margin-top: 103px;">Find quality</h3>
+            <div class="quality">
+                <img src="img/quality 1.png" alt="img_quality" class="quality_top">
+                <img src="img/quality 2.png" alt="img_quality" class="quality_bottom">
+                <img src="img/quality 3.png" alt="img_quality" class="quality_top">
+                <img src="img/quality 4.png" alt="img_quality" class="quality_bottom">
             </div>
-            <div class="mem">
-                <div class="members_up">1K+</div>
-                <div class="members_down">MEMBERS</div>
-            </div>
-            <div class="programs">
-                <div class="members_up">50+</div>
-                <div class="members_down">PROGARMS</div>
-            </div>
-        </div>
-    </header>
+            <button class="read_more">Read more</button>
+        </section>
+    </div>
 </body>
 </html>
