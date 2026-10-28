@@ -107,7 +107,7 @@ header{
     height: 100%;
     border-radius: 40px;
     transform: scale(0);   
-    transition: transform 1s ease;
+    transition: transform 500ms ease;
 }
 
 .button__overlay{
@@ -119,7 +119,7 @@ header{
     height: 100%;
     border-radius: 40px;
     transform: scale(0);   
-    transition: transform 1s ease;
+    transition: transform 500ms ease;
 
 }
 
