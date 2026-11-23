@@ -19,9 +19,14 @@
     src: url(../fonts/overlock/Overlock-Black.ttf);
 }
 @font-face {
+    font-family: overlock-bold;
+    src: url(../fonts/overlock/Overlock-Bold.ttf);
+}
+@font-face {
     font-family: "inter-reg";
     src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
 }
+
 .text{
     font-size: 16px;
     font-family: overlock-reg;
@@ -38,11 +43,13 @@ body{
 header{
     background-position: center;
     background-image: url("../img/img_1.png");
+    width: 1440px;
+    height: 840px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 0px 135px;
+    padding: 0px 149px 0px 135px ;
 }
 .nav{
     width: 1156px;
@@ -57,15 +64,21 @@ header{
     display: flex;
     width: 158px;
     height: 32px;
-    gap: 8px;
+    gap: 5px;
     align-items: center;
 }
-
 .menu{
     display: flex;
     gap: 40px;
+    width: 375px;
+    height: 24px;
+  
+    margin: 12px 164px 12px 245px;
+    
 }
 .nav__menu__text{
+    font-family: inter-reg;
+    font-size: 16px;
     position: relative;
     text-decoration: none;
     cursor: pointer;
@@ -82,7 +95,7 @@ header{
     height: 3px;
     width: 0%;
     transition: all 500ms;
-    bottom: -5px;
+    bottom: 0px;
     left: 0;
 }
 .nav__menu__text:hover::before{
@@ -99,6 +112,7 @@ header{
     position: relative;
     display: flex;
     font-family: poppins-reg;
+    font-size: 16px;
     border-radius: 40px;
     justify-content: center;
     align-items: center;
@@ -110,13 +124,10 @@ header{
     margin: 0;
     
 }
-
-
 .button__text__overlay__sign-up{
     position: relative;
-    transition: color 500ms ease;
+    transition: color ease;
 }
-
 .button__overlay__sign-up{
     background-color: white;
     position: absolute;
@@ -124,10 +135,9 @@ header{
     height: 100%;
     border-radius: 40px;
     transform: scale(0);   
-    transition: transform 500ms ease;
+    transition: transform ease;
     margin-top:0.5px;
 }
-
 .button__overlay{
 
     inset: 0;
@@ -137,26 +147,20 @@ header{
     height: 100%;
     border-radius: 40px;
     transform: scale(0);   
-    transition: transform 500ms ease;
+    transition: transform ease;
 
 }
-
 .button__text__overlay{
     position: relative;
     z-index: 10;
-    transition: color 500ms ease;
+    transition: color ease;
 }
-
-
-
 .button:hover .button__overlay{
-    transform: scale(0.95);
+    transform: scale(1.02);
 }
 .button:hover .button__text__overlay{
     color: white;
 }
-
-
 .button:hover .button__overlay__sign-up{
     transform: scale(1.02);
 }
@@ -164,8 +168,6 @@ header{
     color: black;
 
 }
-
-
 .button__filled{
     width: 95px;
 }
@@ -175,6 +177,11 @@ header{
     background-color: transparent;
     color: white;
     padding-bottom: 0.5px;
+}
+.shape{
+    width: 366px;
+    height: 156px;
+    margin-top: 24px;
 }
 .preview{
     width: 334px;
@@ -187,7 +194,12 @@ header{
 .play{
     display: flex;
     align-items: center;
-    
+    flex-direction: row;
+    text-decoration: none;
+    width: 144px;
+    height: 56px;
+    font-family: open_sans-semibold;
+    gap: 8px;
 }
 .button__get-started{
     width: 150px;
@@ -216,3 +228,20 @@ header{
     height: 70px;
     
 }
+.rainbow{
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 400% 400%;
+    background-clip: text;
+    color: transparent;
+    animation: rainbowMove 35s linear infinite;
+}
+@keyframes rainbowMove {
+        0% {
+        background-position: 0 0;
+          }
+         100% {
+        background-position: 400% 400%; /* Движение градиента */
+            }
+        }
+
+
