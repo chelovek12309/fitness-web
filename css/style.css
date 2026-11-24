@@ -19,13 +19,19 @@
     src: url(../fonts/overlock/Overlock-Black.ttf);
 }
 @font-face {
-    font-family: overlock-bold;
+    font-family: "overlock-bold";
     src: url(../fonts/overlock/Overlock-Bold.ttf);
 }
 @font-face {
     font-family: "inter-reg";
     src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
+    font-weight: 400;
 }
+@font-face {
+    font-family: 'inter-bold';
+    src: url(../fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+
 
 .text{
     font-size: 16px;
@@ -58,7 +64,7 @@ header{
     flex-direction: row;
     align-items: center;
     margin-top: 34px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .logo{
     display: flex;
@@ -72,7 +78,6 @@ header{
     gap: 40px;
     width: 375px;
     height: 24px;
-  
     margin: 12px 164px 12px 245px;
     
 }
@@ -156,13 +161,13 @@ header{
     transition: color ease;
 }
 .button:hover .button__overlay{
-    transform: scale(1.02);
+    transform: scale(1);
 }
 .button:hover .button__text__overlay{
     color: white;
 }
 .button:hover .button__overlay__sign-up{
-    transform: scale(1.02);
+    transform: scale(1);
 }
 .button:hover .button__text__overlay__sign-up{
     color: black;
@@ -172,11 +177,12 @@ header{
     width: 95px;
 }
 .button__unfilled{
-    width: 110px;
+    width: 94px;
+    width: 109px;
     border: 1px solid #FFFFFF;
     background-color: transparent;
     color: white;
-    padding-bottom: 0.5px;
+
 }
 .shape{
     width: 366px;
@@ -208,25 +214,28 @@ header{
 
 }
 .members{
+    width: 451px;
+    height: 75px;
     display: flex;
-    margin-top: 180px;
-    margin-bottom: 83px;
+    margin: 180px 174px 83px 676px;
     gap: 80px;
-    justify-content: end;
-
+    font-family: inter-reg;
 }
 .members__top{
-    font-family: inter-reg;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    font-family: inter-bold;
+    font-weight: 700;
     font-size: 32px;
     margin-bottom: 16px;
-
+    line-height: 1;
 }
 .members__bottom{
     font-family: inter-reg;
-}
-.members__div{
-    height: 70px;
-    
+    font-weight: 400;
+    height: 24px;
+    text-transform: uppercase;
 }
 .rainbow{
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
