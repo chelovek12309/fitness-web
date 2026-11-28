@@ -36,15 +36,38 @@
     font-size: $size;
     color: #FFFFFF;
     font-family: $font-family;
+    text-decoration: none;
 }
 @mixin img__gallery(){
     width: 268px;
     height: 386px;
 }
+@mixin button($color: black, $bgc: white, $width: 95px, $height: 48px){
+    height: $height;
+    width: $width;
+    position: relative;
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgc;
+    color: $color;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+   
+}
 .text{
     @include font(16px, overlock-reg);
 }
-
+.href-white{
+    @include font($font-family: poppins-reg);
+}
+.href{
+    @include font($font-family: poppins-reg);
+    color: black;
+}
 body{
     display: flex;
     justify-content: center;
@@ -116,28 +139,13 @@ header{
     gap: 16px;
     height: 48px;
 }
-.button{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    font-family: poppins-reg;
-    font-size: 16px;
-    border-radius: 40px;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    
-}
+
 .button__text__overlay__sign-up{
     position: relative;
     transition: color ease;
 }
 .button__overlay__sign-up{
+    inset: 0;
     background-color: white;
     position: absolute;
     width: 100%;
@@ -145,10 +153,9 @@ header{
     border-radius: 40px;
     transform: scale(0);   
     transition: transform ease;
-    margin-top:0.5px;
 }
-.button__overlay{
 
+.button__overlay{
     inset: 0;
     background-color: #383838;
     position: absolute;
@@ -157,36 +164,35 @@ header{
     border-radius: 40px;
     transform: scale(0);   
     transition: transform ease;
-
 }
+
 .button__text__overlay{
     position: relative;
     z-index: 10;
     transition: color ease;
 }
-.button:hover .button__overlay{
+.button__get-started:hover .button__overlay, .button__filled:hover .button__overlay{
     transform: scale(1.02);
 }
-.button:hover .button__text__overlay{
+.button__get-started:hover .button__text__overlay, .button__filled:hover .button__text__overlay{
     color: white;
 }
-.button:hover .button__overlay__sign-up{
+
+.button__unfilled:hover .button__overlay__sign-up{
     transform: scale(1.02);
 }
-.button:hover .button__text__overlay__sign-up{
-    color: black;
 
+.button__unfilled:hover .button__text__overlay__sign-up{
+    color: black;
 }
 .button__filled{
-    width: 95px;
+    @include font($font-family: poppins-reg);
+    @include button();
 }
 .button__unfilled{
-    width: 94px;
-    width: 109px;
+    @include font($font-family:poppins-reg);
+    @include button($color: white, $bgc: transparent, $width: 109px);
     border: 1px solid #FFFFFF;
-    background-color: transparent;
-    color: white;
-
 }
 .shape{
     width: 366px;
@@ -216,10 +222,8 @@ header{
     gap: 8px;
 }
 .button__get-started{
-    width: 150px;
-    height: 60px;
-    font-family: open_sans-semibold;
-
+    @include font($font-family: open_sans-semibold);
+    @include button($width:150px, $height: 68px);
 }
 .members{
     width: 451px;

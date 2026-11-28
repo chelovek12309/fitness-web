@@ -36,6 +36,22 @@
   font-size: 16px;
   color: #FFFFFF;
   font-family: overlock-reg;
+  text-decoration: none;
+}
+
+.href-white {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: poppins-reg;
+  text-decoration: none;
+}
+
+.href {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: poppins-reg;
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -88,6 +104,7 @@ header {
   font-size: 16px;
   color: #FFFFFF;
   font-family: inter-reg;
+  text-decoration: none;
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -120,29 +137,13 @@ header {
   height: 48px;
 }
 
-.button {
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  font-family: poppins-reg;
-  font-size: 16px;
-  border-radius: 40px;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-
 .button__text__overlay__sign-up {
   position: relative;
   transition: color ease;
 }
 
 .button__overlay__sign-up {
+  inset: 0;
   background-color: white;
   position: absolute;
   width: 100%;
@@ -150,7 +151,6 @@ header {
   border-radius: 40px;
   transform: scale(0);
   transition: transform ease;
-  margin-top: 0.5px;
 }
 
 .button__overlay {
@@ -170,32 +170,61 @@ header {
   transition: color ease;
 }
 
-.button:hover .button__overlay {
+.button__get-started:hover .button__overlay, .button__filled:hover .button__overlay {
   transform: scale(1.02);
 }
 
-.button:hover .button__text__overlay {
+.button__get-started:hover .button__text__overlay, .button__filled:hover .button__text__overlay {
   color: white;
 }
 
-.button:hover .button__overlay__sign-up {
+.button__unfilled:hover .button__overlay__sign-up {
   transform: scale(1.02);
 }
 
-.button:hover .button__text__overlay__sign-up {
+.button__unfilled:hover .button__text__overlay__sign-up {
   color: black;
 }
 
 .button__filled {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: poppins-reg;
+  text-decoration: none;
+  height: 48px;
   width: 95px;
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .button__unfilled {
-  width: 94px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: poppins-reg;
+  text-decoration: none;
+  height: 48px;
   width: 109px;
-  border: 1px solid #FFFFFF;
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #FFFFFF;
 }
 
 .shape {
@@ -208,6 +237,7 @@ header {
   font-size: 68px;
   color: #FFFFFF;
   font-family: overlock-bold;
+  text-decoration: none;
   line-height: 78px;
 }
 
@@ -232,9 +262,23 @@ header {
 }
 
 .button__get-started {
-  width: 150px;
-  height: 60px;
+  font-size: 16px;
+  color: #FFFFFF;
   font-family: open_sans-semibold;
+  text-decoration: none;
+  height: 68px;
+  width: 150px;
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .members {
@@ -249,6 +293,7 @@ header {
   font-size: 32px;
   color: #FFFFFF;
   font-family: inter-bold;
+  text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -259,6 +304,7 @@ header {
   font-size: 16px;
   color: #FFFFFF;
   font-family: inter-reg;
+  text-decoration: none;
   height: 24px;
   text-transform: uppercase;
 }
@@ -297,6 +343,7 @@ header {
   font-size: 16px;
   color: #FFFFFF;
   font-family: open_sans-semibold;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,6 +358,7 @@ header {
   font-size: 48px;
   color: #FFFFFF;
   font-family: overlock-bold;
+  text-decoration: none;
   color: #000000;
   width: 233px;
   height: 58px;
